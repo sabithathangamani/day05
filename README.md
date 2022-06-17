@@ -101,6 +101,8 @@ Arrow Function:
     }
   console.log(res([10,20,30,40,50]));
   
+ d. Return all the prime numbers in an array
+
   
     
     
