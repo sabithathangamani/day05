@@ -24,8 +24,7 @@ Functions
   return b;})([1,2,3,4,5,6,7,8,9,10]);
   
   Arrow Function:
-  
-  
+    
 var res=(arr)=>{
   var b=[];
   for(var i=0;i<arr.length;i++){
@@ -57,7 +56,6 @@ return str;
    b.push(str[i]);
 return str;
   })("how are you");
-
 
 Arrow Function:
 var res=(str)=>{
