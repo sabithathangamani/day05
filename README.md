@@ -111,7 +111,7 @@ Arrow Function:
   console.log(res([10,20,30,40,50]));
   
   
-  e.Return all the prime numbers in an array
+  e.Return all the palindromes in an array
   // Anonymous Function:
 
  var res=function(arr){
