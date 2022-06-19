@@ -109,3 +109,46 @@ Arrow Function:
     
   }
   console.log(res([10,20,30,40,50]));
+  
+  
+  e.Return all the prime numbers in an array
+  // Anonymous Function:
+
+ var res=function(arr){
+    var arr1=[];
+    for(var i=0;i<arr.length;i++){
+    arr1.push(arr[i].split("").reverse().join(""))
+     }
+  var palin=[];
+for(var j=0;j<arr.length;j++){ 
+  if(arr[j]===arr1[j]){
+    palin.push(arr[j])} }
+ return palin;
+
+ }
+  console.log(res(["abc","madam","cool","malayalam","racecar"]));
+  
+//  IIFE:
+(function (arr){
+      var arr1=[];
+    for(var i=0;i<arr.length;i++){
+    arr1.push(arr[i].split("").reverse().join(""))
+     }
+  var palin=[];
+for(var j=0;j<arr.length;j++){ 
+  if(arr[j]===arr1[j]){
+    palin.push(arr[j])} }
+ return palin;})(["abc","madam","cool","malayalam","racecar"]);
+ 
+// Arrow Function:  
+var res=(arr)=>{
+      var arr1=[];
+    for(var i=0;i<arr.length;i++){
+    arr1.push(arr[i].split("").reverse().join(""))
+     }
+  var palin=[];
+for(var j=0;j<arr.length;j++){ 
+  if(arr[j]===arr1[j]){
+    palin.push(arr[j])} }
+ return palin;}
+  console.log(res(["abc","madam","cool","malayalam","racecar"]));
