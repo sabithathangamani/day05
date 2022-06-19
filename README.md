@@ -152,3 +152,62 @@ for(var j=0;j<arr.length;j++){
     palin.push(arr[j])} }
  return palin;}
   console.log(res(["abc","madam","cool","malayalam","racecar"]));
+  
+  f.Return median of two sorted arrays of the same size
+//Anonymous function
+ var res=function(a,b){
+   for(var i=0;i<b.length;i++){
+     var temp=0;
+     a.push(b[i])
+     }
+ for(var j=0;j<a.length;j++){
+   var temp=a[j]
+   for(var k= j-1;j >= 0 && (a[k] >temp); k--) {
+        a[k+1] = a[k];
+   }
+    a[k+1] = temp;
+     }  
+     var e=(a.length)/2;
+  if(a.length%2===0)
+   {return ((a[e]+a[e-1])/2) }
+ }
+  console.log(res([100,11],[1,30]));
+  
+  //IIFE
+  (function(a,b){
+   for(var i=0;i<b.length;i++){
+     var temp=0;
+     a.push(b[i])
+     }
+ for(var j=0;j<a.length;j++){
+   var temp=a[j]
+   for(var k= j-1;j >= 0 && (a[k] >temp); k--) {
+        a[k+1] = a[k];
+   }
+    a[k+1] = temp;
+     }  
+     var e=(a.length)/2;
+  if(a.length%2===0)
+   {return ((a[e]+a[e-1])/2) }
+ })([100,11],[1,30])
+ // console.log(res([100,11],[1,30]));
+ 
+ //Arrow Function
+ var res=(a,b)=>{
+   for(var i=0;i<b.length;i++){
+     var temp=0;
+     a.push(b[i])
+     }
+ for(var j=0;j<a.length;j++){
+   var temp=a[j]
+   for(var k= j-1;j >= 0 && (a[k] >temp); k--) {
+        a[k+1] = a[k];
+   }
+    a[k+1] = temp;
+     }  
+     var e=(a.length)/2;
+  if(a.length%2===0)
+   {return ((a[e]+a[e-1])/2) }
+ }
+  console.log(res([100,11],[1,30]));
+  
