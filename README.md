@@ -100,15 +100,70 @@ Arrow Function:
   console.log(res([10,20,30,40,50]));
   
  d. Return all the prime numbers in an array
+ 
+ Anonymous Function:
+  var a = [5, 9, 63, 29, 35, 6, 55, 23]
+var prime = [];
 
-  
-    
-    
-    
+var isPrime=function(item){
+    var identifier = item / 2;
+      for (var j = 2; j <= identifier; j++) {
+       if ((item % j) == 0) { // modulous
+        return false;
+       } 
+     }
+     return true;
+}
+for (var index = 0; index < a.length; index++) {
+  if (isPrime(a[index])) {
+      prime.push(a[index])
   }
-  console.log(res([10,20,30,40,50]));
-  
-  
+}
+
+console.log(prime);
+
+IIFE:
+var a = [5, 9, 63, 29, 35, 6, 55, 23]
+var prime = [];
+
+function isPrime(item) {
+    var identifier = item / 2;
+      for (var j = 2; j <= identifier; j++) {
+       if ((item % j) == 0) { // modulous
+        return false;
+       } 
+     }
+     return true;
+}
+for (var index = 0; index < a.length; index++) {
+  if (isPrime(a[index])) {
+      prime.push(a[index])
+  }
+}
+
+console.log(prime);
+
+  Arrow function:
+  var a = [5, 9, 63, 29, 35, 6, 55, 23]
+var prime = [];
+
+var isPrime=(item)=> {
+    var identifier = item / 2;
+      for (var j = 2; j <= identifier; j++) {
+       if ((item % j) == 0) { // modulous
+        return false;
+       } 
+     }
+     return true;
+}
+for (var index = 0; index < a.length; index++) {
+  if (isPrime(a[index])) {
+      prime.push(a[index])
+  }
+}
+
+console.log(prime);
+    
   e.Return all the palindromes in an array
   // Anonymous Function:
 
