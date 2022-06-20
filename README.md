@@ -288,8 +288,7 @@ var res=function(arr){
   var a=[];
   for(var i=0;i<arr.length;i++){
  if (a.indexOf(arr[i]) === -1)
-            a.push(arr[i]);
-    
+     a.push(arr[i]);
     }return a;
     }
     console.log(res([1,2,1,2,3,4,3,4]));
@@ -300,8 +299,7 @@ var res=function(arr){
   var a=[];
   for(var i=0;i<arr.length;i++){
  if (a.indexOf(arr[i]) === -1)
-            a.push(arr[i]);
-    
+    a.push(arr[i]); 
     }return a;
     })([1,2,1,2,3,4,3,4])
     
@@ -311,8 +309,7 @@ var res=(arr)=>{
   var a=[];
   for(var i=0;i<arr.length;i++){
  if (a.indexOf(arr[i]) === -1)
-            a.push(arr[i]);
-    
+    a.push(arr[i]); 
     }return a;
     }
     console.log(res([1,2,1,2,3,4,3,4]));
