@@ -209,3 +209,30 @@ for(var j=0;j<arr.length;j++){
  }
   console.log(res([100,11],[1,30]));
   
+  
+  h.Rotate an array by k times
+//Anonymous function
+var res=function(arr,n){
+  var temp=arr.slice(0,n)
+  var temp1=arr.slice(n)
+  var arr1=[...temp1,...temp]
+  return arr1;
+}
+console.log(res([1, 2, 3, 4, 5, 6, 7,8],4));
+
+//IIFE
+(function(arr,n){
+  var temp=arr.slice(0,n)
+  var temp1=arr.slice(n)
+  var arr1=[...temp1,...temp]
+  return arr1;
+})([1, 2, 3, 4, 5, 6, 7,8],3)
+
+//Arrow function
+var res=(arr,n)=>{
+  var temp=arr.slice(0,n)
+  var temp1=arr.slice(n)
+  var arr1=[...temp1,...temp]
+  return arr1;
+}
+console.log(res([1, 2, 3, 4, 5, 6, 7,8],4));
