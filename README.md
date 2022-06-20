@@ -1,9 +1,11 @@
 # day05
 Functions
 1.Do the below programs in anonymous function & IIFE
-   a.Print odd numbers in an array
+  
+  a.Print odd numbers in an array
+  
+   Anonymous function: 
    
-  Anonymous function:
   var res=function(arr){
   var b=[];
   for(var i=0;i<arr.length;i++){
@@ -35,6 +37,7 @@ var res=(arr)=>{
   console.log(res([1,2,3,4,5,6,7,8,9,10]));
   
 b.Convert all the strings to title caps in a string array
+
 Anonymous Function:
 
 var res=function(str){
@@ -48,6 +51,7 @@ return str;
   console.log(res("how are you"));
   
   IIFE:
+  
   (function(str){
   var b=[];
   str=str.split(' ')
@@ -58,6 +62,7 @@ return str;
   })("how are you");
 
 Arrow Function:
+
 var res=(str)=>{
   var b=[];
   str=str.split(' ')
@@ -82,6 +87,7 @@ Anonymous Function:
   console.log(res([10,20,30,40,50]));
 
 IIFE:
+
   (function(arr){
   var sum=0;
   for(var i=0;i<arr.length;i++){
@@ -102,6 +108,7 @@ Arrow Function:
  d. Return all the prime numbers in an array
  
  Anonymous Function:
+ 
   var a = [5, 9, 63, 29, 35, 6, 55, 23]
 var prime = [];
 
@@ -123,6 +130,7 @@ for (var index = 0; index < a.length; index++) {
 console.log(prime);
 
 IIFE:
+
 var a = [5, 9, 63, 29, 35, 6, 55, 23]
 var prime = [];
 
@@ -144,6 +152,7 @@ for (var index = 0; index < a.length; index++) {
 console.log(prime);
 
   Arrow function:
+  
   var a = [5, 9, 63, 29, 35, 6, 55, 23]
 var prime = [];
 
@@ -165,6 +174,7 @@ for (var index = 0; index < a.length; index++) {
 console.log(prime);
     
   e.Return all the palindromes in an array
+  
   // Anonymous Function:
 
  var res=function(arr){
@@ -182,6 +192,7 @@ for(var j=0;j<arr.length;j++){
   console.log(res(["abc","madam","cool","malayalam","racecar"]));
   
 //  IIFE:
+
 (function (arr){
       var arr1=[];
     for(var i=0;i<arr.length;i++){
@@ -194,6 +205,7 @@ for(var j=0;j<arr.length;j++){
  return palin;})(["abc","madam","cool","malayalam","racecar"]);
  
 // Arrow Function:  
+
 var res=(arr)=>{
       var arr1=[];
     for(var i=0;i<arr.length;i++){
@@ -207,7 +219,9 @@ for(var j=0;j<arr.length;j++){
   console.log(res(["abc","madam","cool","malayalam","racecar"]));
   
   f.Return median of two sorted arrays of the same size
+  
 //Anonymous function
+
  var res=function(a,b){
    for(var i=0;i<b.length;i++){
      var temp=0;
@@ -227,6 +241,7 @@ for(var j=0;j<arr.length;j++){
   console.log(res([100,11],[1,30]));
   
   //IIFE
+  
   (function(a,b){
    for(var i=0;i<b.length;i++){
      var temp=0;
@@ -246,6 +261,7 @@ for(var j=0;j<arr.length;j++){
  // console.log(res([100,11],[1,30]));
  
  //Arrow Function
+ 
  var res=(a,b)=>{
    for(var i=0;i<b.length;i++){
      var temp=0;
@@ -267,6 +283,7 @@ for(var j=0;j<arr.length;j++){
   g.Remove duplicates from an array
   
   //Anonymous function
+  
 var res=function(arr){
   var a=[];
   for(var i=0;i<arr.length;i++){
@@ -278,6 +295,7 @@ var res=function(arr){
     console.log(res([1,2,1,2,3,4,3,4]));
 
 //IIFE
+
 (function(arr){
   var a=[];
   for(var i=0;i<arr.length;i++){
@@ -288,6 +306,7 @@ var res=function(arr){
     })([1,2,1,2,3,4,3,4])
     
 //Arrow Function
+
 var res=(arr)=>{
   var a=[];
   for(var i=0;i<arr.length;i++){
@@ -299,7 +318,9 @@ var res=(arr)=>{
     console.log(res([1,2,1,2,3,4,3,4]));
   
   h.Rotate an array by k times
+  
 //Anonymous function
+
 var res=function(arr,n){
   var temp=arr.slice(0,n)
   var temp1=arr.slice(n)
@@ -309,6 +330,7 @@ var res=function(arr,n){
 console.log(res([1, 2, 3, 4, 5, 6, 7,8],4));
 
 //IIFE
+
 (function(arr,n){
   var temp=arr.slice(0,n)
   var temp1=arr.slice(n)
@@ -317,6 +339,7 @@ console.log(res([1, 2, 3, 4, 5, 6, 7,8],4));
 })([1, 2, 3, 4, 5, 6, 7,8],3)
 
 //Arrow function
+
 var res=(arr,n)=>{
   var temp=arr.slice(0,n)
   var temp1=arr.slice(n)
